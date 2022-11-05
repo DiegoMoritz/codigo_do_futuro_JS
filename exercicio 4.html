@@ -1,0 +1,16 @@
+<script>
+nome = prompt('Digite o nome do aluno')
+
+nota1 = Number(prompt('Digite a primeira nota'))
+nota2 = Number(prompt('Digite a segunda nota'))
+nota3 = Number(prompt('Digite a terceira nota'))
+nota4 = Number(prompt('Digite a quarta nota'))
+
+notaMedia = (nota1 + nota2 + nota3 + nota4)/4
+
+if (notaMedia >= 5) {
+    alert(nome + ' foi aprovado! A nota média foi: ' + notaMedia)
+} else { 
+    alert('Infelizmente ' + nome + ' foi reprovado... A nota média foi: ' + notaMedia)
+}
+</script>
