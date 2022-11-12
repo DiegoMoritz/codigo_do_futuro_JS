@@ -1,0 +1,54 @@
+<script>
+/* Bianca é uma pessoa muito indecisa
+e precisa juntar dinheiro para conseguir viajar em suas férias. Ela terá algumas opções para escolher, com seus respectivos valores.
+
+  Disney = R$ 15000
+  Madrid = R$ 12000
+  Maceió = R$ 8000
+  Ribeirão = R$ 5000
+
+Faça um programa que solicite o nome do usuário, o valor que o usuário tem para viagem, 
+a viagem que o usuário deseja. Mostre no final do programa se o usuário pode viajar ou se ele não pode. 
+Se ele não puder viajar, mostre o quanto falta para o mesmo economizar.
+*/
+
+nome = prompt("Olá, digite o seu nome")
+valor = Number(prompt("Digite o valor que você possui para viajar"))
+viagem = prompt(`Dentre as seguintes opções, qual destino você deseja visitar?
+a) Disney
+b) Madrid
+c) Maceió
+d) Ribeirão`) 
+
+if (valor >= 15000 && viagem == "Disney") {
+    alert(`Maravilha ${nome}! Sua viagem para a Disney está marcada, aproveite!`)
+} else if (valor <15000 && viagem == "Disney") {
+    valorFalta = 15000 - valor
+    alert(`${nome}, infelizmente não é possível realizar a viagem... 
+Faltam ${valorFalta} reais. Partiu economizar!`)
+}
+
+if (valor >= 12000 && viagem == "Madrid") {
+    alert(`Maravilha ${nome}! Sua viagem para Madrid está marcada, aproveite!`)
+} else if (valor <12000 && viagem == "Madrid") {
+    valorFalta = 12000 - valor
+    alert(`Infelizmente não é possível realizar a viagem, ${nome}... 
+Faltam ${valorFalta} reais. Partiu economizar!`)
+}
+
+if (valor >= 8000 && viagem == "Maceió") {
+    alert(`Maravilha ${nome}! Sua viagem para Maceió está marcada, aproveite!`)
+} else if (valor <8000 && viagem == "Maceió") {
+    valorFalta = 8000 - valor
+    alert(`Infelizmente não é possível realizar a viagem, ${nome}... 
+Faltam ${valorFalta} reais. Partiu economizar!`)
+}
+
+if (valor >= 5000 && viagem == "Ribeirão") {
+    alert(`Maravilha ${nome}! Sua viagem para Ribeirão está marcada, aproveite!`)
+} else if (valor <5000 && viagem == "Ribeirão") {
+    valorFalta = 5000 - valor
+    alert(`Infelizmente não é possível realizar a viagem, ${nome}... 
+Faltam ${valorFalta} reais. Partiu economizar!`)
+}
+</script>
